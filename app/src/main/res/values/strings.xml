@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tema2</string>
+    <string name="firstName"></string>
+    <string name="lastName"></string>
+    <string name="button1Text">Add User</string>
+    <string name="button2Text">Delete User</string>
+</resources>

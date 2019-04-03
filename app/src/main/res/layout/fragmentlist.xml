@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="469dp"
+        android:layout_marginBottom="262dp"
+        app:layout_constraintBottom_toTopOf="@+id/editFirstName"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginRight="212dp"
+        android:layout_marginBottom="-134dp"
+        android:hint="@string/firstName"
+        app:layout_constraintBottom_toBottomOf="@+id/ListRecyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/ListRecyclerView"
+        app:layout_constraintLeft_toLeftOf="@+id/ListRecyclerView"
+        app:layout_constraintRight_toRightOf="@+id/ListRecyclerView"
+        app:layout_constraintStart_toStartOf="@+id/ListRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/editLastName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_alignTop="@+id/ListRecyclerView"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="471dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="-140dp"
+        android:hint="@string/lastName"
+        app:layout_constraintBottom_toBottomOf="@+id/ListRecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/ListRecyclerView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/ListRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="@+id/ListRecyclerView" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/ListRecyclerView"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="535dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginRight="212dp"
+        android:layout_marginBottom="-134dp"
+        android:text="@string/button1Text"
+        app:layout_constraintBottom_toBottomOf="@+id/ListRecyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/ListRecyclerView"
+        app:layout_constraintLeft_toLeftOf="@+id/ListRecyclerView"
+        app:layout_constraintRight_toRightOf="@+id/ListRecyclerView"
+        app:layout_constraintStart_toStartOf="@+id/ListRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/editLastName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="533dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="-140dp"
+        android:text="@string/button2Text"
+        app:layout_constraintBottom_toBottomOf="@+id/ListRecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/ListRecyclerView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/ListRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="@+id/ListRecyclerView" />
+
+
+</RelativeLayout>
