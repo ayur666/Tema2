@@ -22,7 +22,7 @@ public class ApplicationController extends Application
 
         // Get a database instance to work with
         temaDoiDatabase = Room.databaseBuilder(getApplicationContext(),
-                TemaDoiDatabase.class, "users").build();
+                TemaDoiDatabase.class, "users").fallbackToDestructiveMigration().allowMainThreadQueries().build();
     }
 
     public static TemaDoiDatabase getAppDatabase(){

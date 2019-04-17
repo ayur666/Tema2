@@ -12,7 +12,7 @@ public class UserRepository
 
     public void insertTask(final User user, final OnUserRepositoryActionListener listener)
     {
-        new InsertTask(listener).execute(user);
+//        new InsertTask(listener).execute(user);
     }
 
     public User getUserByName(String firstName, String lastName)

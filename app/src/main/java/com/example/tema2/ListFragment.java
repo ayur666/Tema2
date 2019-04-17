@@ -50,6 +50,7 @@ public class ListFragment extends Fragment {
             }
         });
 
+        // Listener for delete button
         deleteUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

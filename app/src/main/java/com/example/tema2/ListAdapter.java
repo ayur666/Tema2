@@ -26,8 +26,8 @@ public class ListAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public int getItemCount() { return TestData.userListToDisplay.length;}
-
+    public int getItemCount() { return  TestData.userListToDisplay.length;}
+//    TestData.userListToDisplay.length;
     private class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         private TextView aTextView;
